@@ -1,0 +1,64 @@
+/*/body/*/
+
+body{
+  padding: 25px;
+}
+.title {
+	display: block;
+	color:white;
+}
+
+body {
+	background-color: #fac9c5;
+}
+
+h2 {
+	color: #9a5800;
+}
+
+p {
+	color: black;
+}
+
+.home {
+            display: flex;
+            align-items: center; /* Centers text vertically with the image */
+        }
+        .home img {
+            margin-right: 20px; /* Optional: Adds space between image and text */
+        }
+        .home p {
+            font-size: 24px; /* Adjust font size as needed */
+        }
+
+/*/images/*/
+.img{
+	margin-right:20px;
+	margin-top:20px;
+	float:left;
+	margin-bottom:20px;
+}
+
+/*/navigation/*/
+
+ul {
+	clear:left;
+	list-style-type:none;
+	margin:1px;
+	padding:1em;
+	overflow:hidden;
+}
+
+li{
+	display:inline;
+}
+
+#link{
+	color:white;
+}
+
+.navbar {
+background-color:#C8292E;
+}
+
+/*/background top/*/
