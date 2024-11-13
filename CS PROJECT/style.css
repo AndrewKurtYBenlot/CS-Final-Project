@@ -61,4 +61,11 @@ li{
 background-color:#C8292E;
 }
 
+a:hover {
+	background-color:#228C22;
+	text-decoration:none;	
+}
+a:active{
+	background-color:red;
+}
 /*/background top/*/
