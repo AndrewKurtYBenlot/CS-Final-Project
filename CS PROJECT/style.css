@@ -20,7 +20,7 @@ p {
 	color: black;
 }
 
-.home {
+article{
             display: flex;
             align-items: center; /* Centers text vertically with the image */
         }
@@ -57,7 +57,7 @@ li{
 	color:white;
 }
 
-.navbar {
+header {
 background-color:#C8292E;
 }
 
@@ -67,5 +67,10 @@ a:hover {
 }
 a:active{
 	background-color:red;
+}
+
+
+footer {
+    text-align: center;
 }
 /*/background top/*/
