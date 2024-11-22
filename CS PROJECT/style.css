@@ -32,11 +32,13 @@ article{
         }
 
 /*/images/*/
-.img{
+.img:hover{
 	margin-right:20px;
 	margin-top:20px;
 	float:left;
 	margin-bottom:20px;
+	transform-origin:center top;
+	transform: skewY(1deg);
 }
 
 /*/navigation/*/
@@ -60,7 +62,12 @@ li{
 header {
 background-color:#C8292E;
 }
-
+nav a{
+	background-color:#C8292E;
+	transition-property:background-color;
+	transition-duration:1s;
+}
+	
 a:hover {
 	background-color:#228C22;
 	text-decoration:none;	
@@ -69,6 +76,13 @@ a:active{
 	background-color:red;
 }
 
+.home:hover{
+	transform-origin:center top;
+	transform: scale(1.2);
+	transition-property:background-color;
+	transition-duration:1s;
+	transition-timing-function: ease-in-out;
+}
 
 footer {
     text-align: center;
