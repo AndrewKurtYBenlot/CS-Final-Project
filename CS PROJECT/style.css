@@ -31,16 +31,6 @@ article{
             font-size: 24px; /* Adjust font size as needed */
         }
 
-/*/images/*/
-.img:hover{
-	margin-right:20px;
-	margin-top:20px;
-	float:left;
-	margin-bottom:20px;
-	transform-origin:center top;
-	transform: skewY(1deg);
-}
-
 /*/navigation/*/
 
 ul {
@@ -65,7 +55,8 @@ background-color:#C8292E;
 nav a{
 	background-color:#C8292E;
 	transition-property:background-color;
-	transition-duration:1s;
+	transition-duration:0.8s;
+	text-decoration:none;
 }
 	
 a:hover {
@@ -76,15 +67,102 @@ a:active{
 	background-color:red;
 }
 
-.home:hover{
-	transform-origin:center top;
-	transform: scale(1.2);
-	transition-property:background-color;
-	transition-duration:1s;
-	transition-timing-function: ease-in-out;
+/*/home/*/
+.t2 {
+	text-align: center;
+	border-style: none;
+	border-width: 1px;
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	width: 700px;
+	height: 300px;
+	background-color: #fac9c5;
+	transition: 
+		width 2s,
+		height 2s,
+		background-color 2s,
+		transform 2s;
+	position: relative;
+}
+
+.t2:hover {
+	background-color: #c8292e;
+	color: white;
+	width: 1000px;
+	height: 60px;
+	transform: rotate(360deg);
 }
 
 footer {
+	clear: left;
     text-align: center;
+	background-color:#C8292E;
+	color:white;
 }
-/*/background top/*/
+/*/sprites/*/
+.spritefacebook {
+	background: url('Images/sprite.png') no-repeat -141px -80px;
+	width: 21px;
+	height: 21px;
+	float: right;
+}
+.spritetwitter {
+	background: url('Images/sprite.png') no-repeat -212px -80px;
+	width: 22px;
+	height: 22px;
+	float:right;
+}
+.spritelinkedin {
+	background: url('Images/sprite.png') no-repeat -248px -80px;
+	width: 22px;
+	height: 22px;
+	float:right;
+}
+/*/video/*/
+.video{
+	margin-right:20px;
+	margin-top:20px;
+	float:left;
+	margin-bottom:20px;
+	transition-property:transform;
+	transition-duration:0.3s;
+	float:left;
+}
+.video:hover{
+	transform:scale(0.9);
+}
+
+/*/animation/*/
+ .heartsprite {
+	 background: url('Images/heartsprite.jpg') no-repeat 0 0;
+	 width: 97px;
+	 height: 124px;
+	 animation: varName 1s steps(8) infinite;
+	 float:right;
+ }
+ @keyframes varName{
+	 from{background-position-x:0px;}
+	 to{background-position-x:-405px;}
+ }
+ 
+/*/attributes/*/
+div[class^="sprite"] {
+	background-color:black;
+	border:1px solid #fac9c5;
+}
+
+::selection {
+	background-color: #C8292E;
+	color: white;
+}
+
+.img{
+	margin-right:20px;
+	margin-top:20px;
+	float:left;
+	margin-bottom:20px;
+	border: 2px solid #C8292E;
+	background: url('Images/About us.png') no-repeat;
+}
+#coverSize { background-size: cover; }
