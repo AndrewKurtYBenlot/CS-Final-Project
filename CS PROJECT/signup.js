@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		localStorage.setItem("password", password);
 		localStorage.setItem("why", why);
 
-		window.location.href = "Profile.html";
+		window.location.href = "proj_profile_BENLOT.html";
 		});
 	}
 
